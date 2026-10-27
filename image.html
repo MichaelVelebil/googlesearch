@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Images</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="top-nav">
+        <a href="https://github.com/MichaelVelebil/portfolio" target="_blank">Moje Portfolio</a>
+        <a href="index.html">Zpět na vyhledávání</a>
+    </header>
+
+    <main class="search-container">
+        <h1 class="logo">Google Obrázky</h1>
+        <form action="https://google.com/search" method="GET">
+            <!-- Skrytý input, který Googlu řekne, že chceme obrázky -->
+            <input type="hidden" name="tbm" value="isch">
+            <div class="search-box">
+                <input type="text" name="q" class="search-input" placeholder="Hledat obrázky" required>
+            </div>
+            <div class="search-buttons">
+                <button type="submit" class="btn">Hledat obrázky</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="https://validator.w3.org/nu/?doc=https://michaelvelebil.github.io/googlesearch/image.html" target="_blank">Validace HTML</a>
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://michaelvelebil.github.io/googlesearch/image.html" target="_blank">Validace CSS</a>
+            <a href="citace.html">Zdroje a citace</a>
+        </div>
+    </footer>
+</body>
+</html>

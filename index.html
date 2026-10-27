@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="top-nav">
+        <a href="https://github.com/MichaelVelebil/portfolio" target="_blank">Moje Portfolio</a>
+        <a href="image.html">Hledání obrázků</a>
+        <a href="advanced.html">Pokročilé vyhledávání</a>
+        <a href="forms.html">Ukázka formulářů</a>
+    </header>
+
+    <main class="search-container">
+        <h1 class="logo">Google</h1>
+        <!-- Odeslání dotazu přímo na Google -->
+        <form action="https://google.com/search" method="GET">
+            <div class="search-box">
+                <!-- Parametr 'q' reprezentuje vyhledávaný výraz -->
+                <input type="text" name="q" class="search-input" placeholder="Hledat Googlem" required>
+            </div>
+            <div class="search-buttons">
+                <button type="submit" class="btn">Hledat Googlem</button>
+                <button type="submit" name="btnI" value="1" class="btn">Zkusím štěstí</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="https://validator.w3.org/nu/?doc=https://michaelvelebil.github.io/googlesearch/index.html" target="_blank">Validace HTML</a>
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://michaelvelebil.github.io/googlesearch/index.html" target="_blank">Validace CSS</a>
+            <a href="citace.html">Zdroje a citace</a>
+        </div>
+    </footer>
+</body>
+</html>

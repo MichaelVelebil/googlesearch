@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Pokročilé vyhledávání</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .adv-form { max-width: 800px; margin: 0 auto; text-align: left; width: 100%; }
+        .adv-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
+        .adv-label { font-size: 14px; color: #222; }
+        .adv-input { width: 60%; padding: 6px 8px; border: 1px solid #d9d9d9; }
+        .adv-btn-container { text-align: right; margin-top: 20px; }
+        .adv-btn { background-color: #4d90fe; color: white; border: none; padding: 10px 20px; font-weight: bold; border-radius: 2px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <header class="top-nav">
+        <a href="https://github.com/MichaelVelebil/portfolio" target="_blank">Moje Portfolio</a>
+        <a href="index.html">Zpět na vyhledávání</a>
+    </header>
+
+    <main class="search-container" style="margin-top: 20px;">
+        <h1 style="color: #d93025; font-size: 24px; text-align: left; width: 100%; max-width: 800px; margin-bottom: 30px;">Pokročilé vyhledávání</h1>
+        
+        <form action="https://google.com/search" method="GET" class="adv-form">
+            <div class="adv-row">
+                <label class="adv-label">Všechna tato slova:</label>
+                <input type="text" name="as_q" class="adv-input">
+            </div>
+            <div class="adv-row">
+                <label class="adv-label">Přesně toto slovo nebo fráze:</label>
+                <input type="text" name="as_epq" class="adv-input">
+            </div>
+            <div class="adv-row">
+                <label class="adv-label">Kterékoli z těchto slov:</label>
+                <input type="text" name="as_oq" class="adv-input">
+            </div>
+            <div class="adv-row">
+                <label class="adv-label">Žádné z těchto slov:</label>
+                <input type="text" name="as_eq" class="adv-input">
+            </div>
+            <div class="adv-btn-container">
+                <button type="submit" class="adv-btn">Rozšířené vyhledávání</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="https://validator.w3.org/nu/?doc=https://michaelvelebil.github.io/googlesearch/advanced.html" target="_blank">Validace HTML</a>
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://michaelvelebil.github.io/googlesearch/advanced.html" target="_blank">Validace CSS</a>
+            <a href="citace.html">Zdroje a citace</a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ukázka formulářů</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .form-showcase { max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; gap: 15px; text-align: left; }
+        .form-group { display: flex; flex-direction: column; gap: 5px; }
+        .poznámka { color: red; font-size: 12px; margin-bottom: 20px; text-align: center; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <header class="top-nav">
+        <a href="https://github.com/MichaelVelebil/portfolio" target="_blank">Moje Portfolio</a>
+        <a href="index.html">Zpět na hlavní stranu</a>
+    </header>
+
+    <main class="search-container" style="margin-top: 0;">
+        <h2>Ukázka formulářových prvků</h2>
+        <p class="poznámka">Nefunkční (pouze ukázka)</p>
+
+        <form class="form-showcase">
+            <div class="form-group">
+                <label>Textový vstup (input text):</label>
+                <input type="text" class="nefunkcni" placeholder="Nefunkční pole" disabled>
+            </div>
+
+            <div class="form-group">
+                <label>Heslo (input password):</label>
+                <input type="password" class="nefunkcni" placeholder="*****" disabled>
+            </div>
+
+            <div class="form-group">
+                <label>Výběr (select):</label>
+                <select class="nefunkcni" disabled>
+                    <option>Možnost 1</option>
+                    <option>Možnost 2</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" class="nefunkcni" disabled> Zaškrtávací pole (checkbox)
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label>
+                    <input type="radio" name="ukazka" class="nefunkcni" disabled> Přepínač (radio) - Volba A
+                </label>
+                <label>
+                    <input type="radio" name="ukazka" class="nefunkcni" disabled> Přepínač (radio) - Volba B
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label>Dlouhý text (textarea):</label>
+                <textarea rows="4" class="nefunkcni" disabled></textarea>
+            </div>
+
+            <button type="button" class="btn nefunkcni" disabled>Odeslat (nefunkční)</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="https://validator.w3.org/nu/?doc=https://michaelvelebil.github.io/googlesearch/forms.html" target="_blank">Validace HTML</a>
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://michaelvelebil.github.io/googlesearch/forms.html" target="_blank">Validace CSS</a>
+            <a href="citace.html">Zdroje a citace</a>
+        </div>
+    </footer>
+</body>
+</html>
